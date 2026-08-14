@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* Page is near-white so cards pop — the olive becomes an accent band */
+  --color-page:      #FAFAF6;
+  --color-mist:      #E9ECCE;
+  --color-card:      #FFFFFF;
+  --color-line:      #E8E9DC;
+
+  --color-sage-50:   #F4F6E7;
+  --color-sage-100:  #E9ECCE;
+  --color-sage-200:  #D2DAA8;
+  --color-sage-300:  #AEBF7E;
+  --color-sage-500:  #6E8A4E;
+  --color-sage-600:  #5C7541;
+  --color-sage-700:  #445A2F;
+
+  --color-ink:       #26301A;
+  --color-muted:     #767E63;
+
+  --color-honey-bg:  #FCF3DC;
+  --color-honey-ink: #8A6A24;
+  --color-clay-bg:   #FBE9E4;
+  --color-clay-ink:  #A2543F;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans:    'Inter', system-ui, sans-serif;
+
+  /* Soft, layered shadow — the thing that makes cards feel real */
+  --shadow-card: 0 1px 2px rgb(38 48 26 / 0.04), 0 4px 12px rgb(38 48 26 / 0.05);
+  --shadow-lift: 0 2px 4px rgb(38 48 26 / 0.05), 0 12px 24px rgb(38 48 26 / 0.09);
+}
+
+html { background: var(--color-page); }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
